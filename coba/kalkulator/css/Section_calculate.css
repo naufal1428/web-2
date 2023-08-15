@@ -1,0 +1,23 @@
+.section-calculate{
+    min-height: 600px;
+}
+
+.input-group{
+    width: 600px;
+}
+.input-group-text{
+    width: 150px;
+    justify-content: center;
+}
+
+.btn{
+    color: #FFFFFF;
+    width: 200px;
+    background-color: #06BEE1;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #2541B2;
+}
+

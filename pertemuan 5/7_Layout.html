@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header{
+                background-color: rgb(231, 223, 223);
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: rgb(119, 53, 53);
+            }
+            nav{
+                float: left;
+                width: 30%;
+                height: 300px;
+                background: rgb(219, 190, 181);
+                padding: 20px;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            article{
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #6b2c2c;
+                height: 300px;
+            }
+            section:after{
+                content: "Apa";
+                display: table;
+                clear: both;
+            }
+            footer{
+                background-color: rgb(153, 87, 43);
+                padding: 10px;
+                text-align: center;
+                color: rgb(126, 45, 45);
+            }
+            @media (max-width: 600px){
+                nav, article{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Kota di Indonesia</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="https://youtube.com">Jakarta</a></li>
+                    <li><a href="#">Yogyakarta</a></li>
+                    <li><a href="#">Semarang</a></li>
+                    <li><a href="#">Surabaya</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Jakarta</h1>
+                <p>Ibu kota Jakarta merupakan suatu wilayah yang padat penduduk dan menjadi pusat pemerintahan Republik Indonesia.</p>
+                <p>DKI Jakarta mempunyai banyak tempat rekreasi seperti Pulau Seribu, Taman Impian Jaya Ancol, dan juga beberapa pulau yang ada disekitar teluk Jakarta.</p>
+            </article>
+        </section>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
+</html>

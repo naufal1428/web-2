@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Dynamic Form Field</title>
+  <style>
+    /* Optional CSS styling for the input fields */
+    .input-container {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <input type="text" id="fieldName" placeholder="Enter field name">
+  <button onclick="createFormField()">Add Field</button>
+  <div id="container"></div>
+
+  <script>
+    function createFormField() {
+      var container = document.getElementById('container');
+      var fieldNameInput = document.getElementById('fieldName');
+      var fieldName = fieldNameInput.value;
+
+      if (fieldName.trim() === '') {
+        alert('Please enter a field name');
+        return;
+      }
+
+      // Create the label element
+      var label = document.createElement('label');
+      label.textContent = fieldName + ': ';
+      container.appendChild(label);
+
+      // Create the input element
+      var input = document.createElement('input');
+      input.type = 'text';
+      input.name = fieldName.toLowerCase().replace(' ', '_');
+      input.id = fieldName.toLowerCase().replace(' ', '_');
+      container.appendChild(input);
+
+      // Optionally, you can add a container class for styling
+      input.classList.add('input-container');
+
+      // Clear the field name input
+      fieldNameInput.value = '';
+    }
+  </script>
+</body>
+</html>
+

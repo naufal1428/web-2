@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Praktikum Pemrograman Web 1 (4b)</title>
+    <style>
+        input{
+            height: 100px;
+            width: 30%;
+        }
+
+        textarea{
+            width: 30%;
+        }
+
+        button{
+            width: 250px;
+            height: 50px; 
+            color: grey;
+            border: none;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Jika anda memerlukan bantuan, Silahkan hubungi kami</h1>
+    <hr>
+    <form action="@" method="post" enctype="text/plain">
+        <p>Email (Wajib Diisi)</p> 
+        <input type="text" name="email">
+        <p>Pesan (Wajib Diisi)</p>
+        <textarea name="pesan" size="40" rows="5"></textarea>
+        <p>*tuliskan kontak yang bisa dihubungi dalam pesan</p> 
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>

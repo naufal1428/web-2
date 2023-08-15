@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url("ramadan\ pattern.jpg");
+        }
+        fieldset{
+            border-radius: 10px;
+            width: fit-content;
+            margin: auto;
+            background-color: lightblue;
+        }
+        input[type="text"],[type="number"],[type="date"]{
+            width: 200%;
+            border-style: hidden;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        textarea{
+            width: 200%;
+            border-style: hidden;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        img{
+           border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+        <img src="ramadanpic.jpg" width="500">
+        <h3 align="center">Formulir Pendaftaran Pemberian Takjil</h3>
+        <form action="" method="POST">
+        <table>
+            <tr>
+                <td width="140">Nama</td>
+                <td><input type="text" placeholder="Masukkan Nama"></td>   
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea placeholder="Masukkan Alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td>Nomor WA</td>
+                <td><input type="number" placeholder="Masukkan nomor yang dapat dihubungi"></td>
+            </tr>
+            <tr>
+                <td>Porsi Takjil</td>
+                <td><input type="number" placeholder="Jumlah porsi takjil"></td>
+            </tr>
+            <tr>
+                <td>Bentuk Pemberian</td>
+                <td><input type="radio" name="bentuk"> makanan
+                    <input type="radio" name="bentuk"> uang
+                </td>
+            </tr>
+            <tr>
+                <td>Pilih Tanggal</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Kirim">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </fieldset>
+</body>
+</html>

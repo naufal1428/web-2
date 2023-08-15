@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-item {
+    margin-left: 50px;
+}
+
+.nav-link {
+    color: #03256c;
+    font-weight: normal;
+    font-size: medium;
+}
+
+.nav-link:hover {
+    color:#1768AC;
+}
+
+.save {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.descript {
+    font-weight: 400;
+}
+
+button {
+    color: gray;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+}
+
+.lingkaran {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background-color:#06BEE1;
+}
+
+.lingkaran i {
+    position: relative;
+    top: 30px
+}
+
+.section1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.descript {
+    color: #FFFFFF;
+}
+
+.bt-section1 {
+    padding: 10px 30px;
+    font-size: medium;
+    color: #FFFFFF;
+    background-color: #2541B2;
+}
+
+.bt-section1:hover {
+    background-color: #06BEE1;
+    color: #03256c;
+}
+
+.section2 {
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+
+.offset {
+    color:#06BEE1;
+}
+
+.offsets {
+    color: #1768AC;
+}
+
+.offsets-p {
+    color: #03256c;
+}
+
+.bt-section2 {
+    padding: 10px 20px;
+    font-size: small;
+    background-color:#2541B2;
+    color:#FFFFFF;
+}
+
+.bt-section2:hover {
+    background-color: #06BEE1;
+    color: #03256c;
+}
+
+.section3 {
+    padding-top: 75px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.impact {
+    padding-bottom: 70px;
+    padding-top: 50px;
+    color: #FFFFFF;
+}
+
+.impacts {
+    color: #FFFFFF;
+}
+
+.section4 {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.project {
+    color: #03256c;
+}
+
+.project-1-2 {
+    color:#06BEE1;
+    padding-top: 30px;
+}
+
+.plastic {
+    background-size: cover;
+    height: 390px;
+    width: 720px;
+}
+
+.problems {
+    color: #1768AC;
+    padding-top: 50px;
+}
+
+.solution1 {
+    color: #1768AC;
+    padding-top: 70px;
+}
+
+.solution2 {
+    color: #1768AC;
+    padding-top: 90px;
+}
+
+.section5 {
+    background-color:#FFFFFF;
+}
+
+.get-in-touch {
+    color:#03256c;
+}
+
+.bt-section5 {
+    padding: 10px 30px;
+    font-size: small;
+    background-color:#2541B2;
+    color:#FFFFFF;
+}
+
+.bt-section5:hover {
+    background-color: #06BEE1;
+    color: #03256c;
+}
+
+.form-control {
+    border-radius: 15px;
+    background-color:#FFFFFF;
+    max-width: 470px;
+    border-color:#03256c;
+}
+
+.thanks {
+    color: #06BEE1;
+}
+
+.footer {
+    background-color:#1768AC;
+    
+}
+
+.item-footer {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.item-footer:hover {
+    color: #FFFFFF;
+}
+
+.form-kalkulator {
+    border-radius: 10px;
+    background-color:#FFFFFF;
+    max-width: 280px;
+    border-style: solid;
+    border-color: #03256c;
+}
+
+.col-form-label {
+    color: #03256c;
+}
+
+.bt-save {
+    padding: 10px 30px;
+    font-size: small;
+    background-color: green;
+    color:#FFFFFF;
+}

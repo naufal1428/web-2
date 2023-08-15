@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 4</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Section_calculate.css">
+
+    <style>
+        img{
+            margin: 0;
+            padding: 0;
+            width: 720px;
+            height: 390px;
+            border-radius: 40px;
+        }
+
+        .container{
+            max-width: 99.2%;
+        }
+
+        h2{
+            color: #FFFFFF;
+        }
+
+        h4{
+            color: #FFFFFF;
+        }
+
+        p{
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body style="background-image:url(Image/Laut.jpg); background-repeat: no-repeat; height: 100%; background-size: cover;">
+    <div class="container m-0 p-0">
+        <div class="row" style="margin-top: 4rem; margin-left: 4rem; margin-bottom: 2rem;">
+            <div class="col">
+                <h1 class="display-1" style="font-size: 20px; color: #FFFFFF;">Project 1:</h1>
+                <h2>OCEANBOUND CLEAN-UP</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-0" style="width: 720px; height: 390px; ">
+                <img src="Image/Reget.jpg" alt="Bulldozer">
+            </div>
+            <div class="col" style="width: 720px; height: 390px; padding-top: 8rem; padding-right: 0;">
+                <h4>PROBLEMS</h4>
+                <P>Plastic recycling generates plastic waste effluent as a standard part of the process. This dirty discharge known as "Mud" is at risk of being discharged into the wastewater and, in the best-case, is usually taken to the nearest landfill.</P>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-end" style="width: 720px; height: 390px; padding-top: 8rem;">
+                <h4>SOLUTIONS</h4>
+                <p>Repurposes the “Mud” into useful building materials. It's composition is perfect for producing bricks! Unfortunately, these recycled plastic compound bricks are slightly more expensive than standard building bricks, so Impac+ program incentivizes the reuse of the “Mud” in the bricks by making them competitive on the open market.</p>
+            </div>
+            <div class="col text-end" style="width: 720px; height: 390px; padding-right: 0; margin-right: 0;">
+                <img src="Image/Brick.jpeg" alt="Bricks">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container p-0" style="margin-top: 10rem; margin-left: 0; margin-right: 0; margin-bottom: 0">
+        <div class="row" style="margin-top: 4rem; margin-left: 4rem; margin-bottom: 2rem;">
+            <div class="col">
+                <h1 class="display-1" style="font-size: 20px; color: #FFFFFF;">Project 2:</h1>
+                <h2>FISHING NET RECOVERY</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-0" style="width: 720px; height: 390px;">
+                <img src="Image/Jaring.jpeg" alt="Jaring">
+            </div>
+            <div class="col" style="width: 720px; height: 390px; padding-top: 8rem; padding-right: 0;">
+                <h4>PROBLEMS</h4>
+                <P>Fishing gear - nets and ropes - pose a significant risk to sea life if cut away in the ocean. Unfortunately, incentives do not exist to recover this gear so at the end of its life, most gets landfilled or simply cut away at sea. It's a huge reason for why fishing nets are the largest ocean plastic polluter.</P>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 4rem;">
+            <div class="col text-end" style="width: 720px; height: 390px; padding-top: 8rem;">
+                <h4>SOLUTIONS</h4>
+                <p>We provides the funds needed to incentivize collection and recycling of this gear. This program creates a pathway for the reclamation of end of life fishing gear.</p>
+            </div>
+            <div class="col text-end" style="width: 720px; height: 390px; padding-right: 0; margin-right: 0;">
+                <img src="Image/Recycle.png" alt="Bricks">
+            </div>
+        </div>
+
+
+
+        <div class="section-calculate p-3">
+            <h1 class="h1 text-center mt-0 mb-0" style="color: #FFFFFF;" >Kalkulator Sampah Plastik</h1>
+            <p class="text-center mt-0 pt-0 mb-3">Kira - kira berapa banyak sampah plastik yang anda kumpulkan dalam setahun ?</p>
+            <div class="container-sampah m-0 p-0" id="container-sampah">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Botol Plastik</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Sedotan</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="2">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Puntung Rokok</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="3">
+                </div>
+            </div>
+            <button type="button" class="btn rounded m-2" onclick="Calculate()">Calculate</button>
+            <button type="button" class="btn rounded m-2" onclick="Add()">Add Item</button>
+            <div class="add" id="add"></div>
+            <div class="result" id="result"></div>
+        </div>
+
+    
+
+
+    <script src="js/customJS.js"></script>
+</body>
+</html>

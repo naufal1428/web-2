@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/Naufal_Manaf_Section_Five/style.css" />
+
+</head>
+<body>
+
+    <!--kalkulator sampah plastik-->
+  <div class="container-fluid kalkulator">
+    <div class="container">
+        <h2 align="center" style="color: #06BEE1;">Kalkulator Sampah Plastik</h2>
+        <p style="color: #03256c;">Dalam 1 hari, berapa banyak anda berkontribusi terhadap sampah plastik?</p>
+        <form>
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Botol Plastik</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-kalkulator" id="1" >
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Plastik</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-kalkulator" id="2">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Puntung Rokok</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-kalkulator" id="3">
+                </div>
+            </div>
+
+            <div id="container-sampah"></div>
+
+                <button type="button" class="bt-section5" onclick="Calculate()">Calculate</button>
+                <br>
+                <button type="button" class="bt-section5" onclick="Add()">Add Item</button>
+             
+       
+        </form>
+
+        <br>
+
+        <div id="add"></div>
+
+        <div id="result"></div>
+        
+    </div>
+  </div>
+    
+      <!--belajar JS-->
+    <script>
+          
+        const daftar_id = ["1", "2", "3"]
+  
+        function Calculate() {
+          var jumlah = 0;
+          for (var i=0; i<daftar_id.length; i++) {
+            jumlah += +document.getElementById(daftar_id[i]).value;
+          }
+          var result = document.getElementById("result");
+          jumlah *= 365
+          result.innerHTML = "<br>" + "<b>Total sampah per-tahun</b>: " + "<b>"+jumlah+"</b>";
+        }
+  
+        function Add() {
+          var add_section = document.getElementById("add");
+          add_section.innerHTML = '<input class="form-control form_add" type="text" placeholder="" aria-label=".form-control-sm example" id="Adder"><button type="button" class="bt-save" onclick="Save()">Save</button>'
+        }
+  
+        function Save() {
+          var counter = 4;
+          var container = document.getElementById("container-sampah");
+          container.innerHTML += '<div class="row mb-3"><label class="col-sm-2 col-form-label">' + document.getElementById("Adder").value + '</label><div class="col-sm-10"><input type="text" class="form-kalkulator" id="'+ counter + '"></div></div>'
+          daftar_id.push(String(counter));
+          counter++
+        }
+  
+      </script>
+
+</body>
+</html>

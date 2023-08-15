@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+    height: 440px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    position: relative; 
+    width: 400px; 
+    background: transparent; 
+    border-radius: 20px; 
+    backdrop-filter: blur (20px); 
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5); 
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    
+    transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    color: black;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.wrapper .form-box {
+    width: 100%; 
+    padding: 40px; 
+}
+
+.wrapper .form-box.login {
+    /* display: none; */
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.form-control-login {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot {
+    color: black;
+}
+
+.register-link {
+    color: black;
+}
+
+.btn-login {
+    margin-top: 20px;
+    width: 100%;
+    background-color: bisque;
+    border-style: double;
+}
+
+/* style 2 */
+.wrapper {
+    height: 440px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    position: relative; 
+    width: 400px; 
+    background: transparent; 
+    border-radius: 20px; 
+    backdrop-filter: blur (20px); 
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5); 
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    
+    transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    color: black;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.wrapper .form-box {
+    width: 100%; 
+    padding: 40px; 
+}
+
+.wrapper .form-box.login {
+    /* display: none; */
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.form-control-login {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot {
+    color: black;
+}
+
+.register-link {
+    color: black;
+}
+
+.btn-login {
+    margin-top: 20px;
+    width: 100%;
+    background-color: bisque;
+    border-style: double;
+}
+
+.btn-login {
+    border: solid;
+}
+    
+.card {
+    padding-top: 56px;
+    border: none;
+    max-width: 18rem;
+}
+
+.card-body {
+    padding-left: 0%;
+}
+
+.card-img-top {
+    border-radius: 0%;
+    background-color: rgb(165, 165, 165);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container login" style="padding-top: 56px;">
+        <div class="wrapper">
+          <a class="close" href="#">close</a>
+          <div class="form-box login">
+            <h2>login</h2>
+            <form action="#">
+              <input type="email" class="form-control-login" id="exampleFormControlInput1" placeholder="email">
+              <input type="password" id="inputPassword" class="form-control-login" placeholder="password">
+              <div class="remember-forgot">
+                <label><input type="checkbox" /> Remember me</label>
+                <a class="forgot" href="#">Forgot Password?</a>
+              </div>
+              <button type="submit" class="btn-login">Login</button>
+              <div class="login-register">
+                <p>
+                  Don't have an account?
+                  <a href="#" class="register-link">Register</a>
+                </p>
+              </div>
+            </form>
+          </div>
+  
+          <div class="form-box register">
+            <h2>registration</h2>
+            <form action="#">
+              <input type="text" class="form-control-login" id="exampleFormControlInput1" placeholder="username">
+              <input type="email" class="form-control-login" id="exampleFormControlInput1" placeholder="email">
+              <input type="password" id="inputPassword" class="form-control-login" placeholder="password">
+              <div class="remember-forgot">
+                <label><input type="checkbox" /> i agree to the terms and conditions</label>
+                
+              </div>
+              <button type="submit" class="btn-login">register</button>
+              <div class="login-register">
+                <p>
+                  already have an account?
+                  <a href="#" class="login-link">login</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container login" style="padding-top: 56px;">
+        <div class="wrapper">
+          <a class="close" href="#">close</a>
+          <div class="form-box login">
+            <h2>login</h2>
+            <form action="#">
+              <input type="email" class="form-control-login" id="exampleFormControlInput1" placeholder="email">
+              <input type="password" id="inputPassword" class="form-control-login" placeholder="password">
+              <div class="remember-forgot">
+                <label><input type="checkbox" /> Remember me</label>
+                <a class="forgot" href="#">Forgot Password?</a>
+              </div>
+              <button type="submit" class="btn-login">Login</button>
+              <div class="login-register">
+                <p>
+                  Don't have an account?
+                  <a href="#" class="register-link">Register</a>
+                </p>
+              </div>
+            </form>
+          </div>
+  
+          <div class="form-box register">
+            <h2>registration</h2>
+            <form action="#">
+              <input type="text" class="form-control-login" id="exampleFormControlInput1" placeholder="username">
+              <input type="email" class="form-control-login" id="exampleFormControlInput1" placeholder="email">
+              <input type="password" id="inputPassword" class="form-control-login" placeholder="password">
+              <div class="remember-forgot">
+                <label><input type="checkbox" /> i agree to the terms and conditions</label>
+                
+              </div>
+              <button type="submit" class="btn-login">register</button>
+              <div class="login-register">
+                <p>
+                  already have an account?
+                  <a href="#" class="login-link">login</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const wrapper = document.querySelector('.wrapper');
+        const loginLink = document.querySelector('.login-link');
+        const  registerLink = document.querySelector('.register-link');
+        const  btnPopup = document.querySelector('.btnLogin-popup');
+
+        registerLink.addEventListener('click', () => { 
+            wrapper.classList.add('active');
+        });
+
+        loginLink.addEventListener('click', () => { 
+            wrapper.classList.remove('active');
+        });
+
+        btnPopup.addEventListener('click', () => { 
+            wrapper.classList.remove('active-popup');
+        });
+
+        // script 2
+        // const wrapper = document.querySelector('.wrapper');
+        // const loginLink = document.querySelector('.login-link');
+        // const  registerLink = document.querySelector('.register-link');
+        // const  btnPopup = document.querySelector('.btnLogin-popup');
+
+        // registerLink.addEventListener('click', () => { 
+        //     wrapper.classList.add('active');
+        // });
+
+        // loginLink.addEventListener('click', () => { 
+        //     wrapper.classList.remove('active');
+        // });
+
+        // btnPopup.addEventListener('click', () => { 
+        //     wrapper.classList.remove('active-popup');
+        // });
+      </script>
+
+</body>
+</html>

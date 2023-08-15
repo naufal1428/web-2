@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Engine</title>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Cari...">
+    <button onclick="search()">Cari</button>
+    <ul id="resultsList"></ul>
+
+    <script>
+        // Data contoh
+        var data = [
+            { title: "Artikel 1", content: "Ini adalah konten artikel 1." },
+            { title: "Artikel 2", content: "Ini adalah konten artikel 2." },
+            { title: "Artikel 3", content: "Ini adalah konten artikel 3." },
+        ];
+
+        function search() {
+        // Ambil input dari pengguna
+        var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+
+        // Bersihkan hasil pencarian sebelumnya
+        var resultsList = document.getElementById("resultsList");
+        resultsList.innerHTML = "";
+
+        // Cari kata kunci dalam data
+        for (var i = 0; i < data.length; i++) {
+            var title = data[i].title.toLowerCase();
+            var content = data[i].content.toLowerCase();
+
+            if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                // Tampilkan hasil pencarian
+                var li = document.createElement("li");
+                var titleNode = document.createTextNode(data[i].title);
+                var contentNode = document.createTextNode(data[i].content);
+                li.appendChild(titleNode);
+                li.appendChild(document.createElement("br"));
+                li.appendChild(contentNode);
+                resultsList.appendChild(li);
+                }
+            }
+        }
+
+    </script>
+
+    
+
+</body>
+</html>

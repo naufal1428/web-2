@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Item</title>
+  <style>
+    .item-container {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <button onclick="addItem()">Add Item</button>
+  <div id="container"></div>
+
+  <script>
+    var itemCount = 1;
+
+    function addItem() {
+      var container = document.getElementById('container');
+
+      // Create item container
+      var itemContainer = document.createElement('div');
+      itemContainer.classList.add('item-container');
+
+      // Create input field
+      var input = document.createElement('input');
+      input.type = 'text';
+      input.placeholder = 'Enter Label';
+      input.id = 'inputField' + itemCount;
+
+      // Create Save button
+      var saveButton = document.createElement('button');
+      saveButton.innerHTML = 'Save';
+      saveButton.addEventListener('click', function() {
+        createNewLabel(input.id);
+      });
+
+      // Append input field and save button to item container
+      itemContainer.appendChild(input);
+      itemContainer.appendChild(saveButton);
+
+      // Append item container to the main container
+      container.appendChild(itemContainer);
+
+      itemCount++;
+    }
+
+    function createNewLabel(inputId) {
+      var inputField = document.getElementById(inputId);
+
+      // Get the label value
+      var label = inputField.value.trim();
+      if (label === '') {
+        alert('Please enter a label.');
+        return;
+      }
+
+      // Create label element
+      var labelElement = document.createElement('label');
+      labelElement.innerHTML = label;
+
+      // Create line break element
+      var lineBreak = document.createElement('br');
+
+      // Append label and line break to the main container
+      var container = document.getElementById('container');
+      container.appendChild(labelElement);
+      container.appendChild(input);
+      container.appendChild(lineBreak);
+
+      // Clear input field value
+      inputField.value = '';
+    }
+  </script>
+</body>
+</html>

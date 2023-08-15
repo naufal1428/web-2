@@ -1,0 +1,24 @@
+line 141: <!-- <h1>Ujian Tengah Semester PPW 2023</h1> --> diubah menjadi <h1>Ujian Tengah Semester PPW 2023</h1>
+
+line 47: cta diubah menjadi .cta
+
+line 166: <div> ditambah menjadi <div class="container">
+
+line 125: nav ul ul lu diubah menjadi nav ul ul ul {
+
+line 186: ditambahkan menjadi <img src="https://via.placeholder.com/150" alt="Gambar 4">
+
+line 175: dihapus <p>Deskripsi singkat box 2.</p>
+
+line 169: dihapus <h3>Judul Box 1</h3>
+
+line 218: dihapus <img src="https://via.placeholder.com/550" alt="Gambar 8">
+
+line 195: ditambahkan menjadi <h3 style="color: maroon;">Judul Box 5</h3>
+
+line 159: diberi tag <ul>
+
+line 163: diberi tag </ul>
+
+line 165: diberi elemen <li><a href="#">Kontak</a>
+

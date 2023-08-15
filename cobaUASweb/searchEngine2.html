@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #resultsContainer {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            background-color: #ffffff;
+            padding: 10px;
+            display: none;
+            border: solid;
+        }
+
+        #resultsContainer.visible {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Cari...">
+    <button onclick="search()">Cari</button>
+
+    <img src="http://192.168.100.15:5501/UAS%20web/images/hoodie%20on%20fit.png">
+
+    <div id="resultsContainer">
+        <ul id="resultsList"></ul>
+    </div>
+
+    <script src="search.js"></script>
+
+    <script>
+        // Data contoh
+        var data = [
+            { title: "Artikel 1", content: "Ini adalah konten artikel 1." },
+            { title: "Artikel 2", content: "Ini adalah konten artikel 2." },
+            { title: "Artikel 3", content: "Ini adalah konten artikel 3." },
+        ];
+
+        function search() {
+            // Ambil input dari pengguna
+            var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+
+            // Bersihkan hasil pencarian sebelumnya
+            var resultsList = document.getElementById("resultsList");
+            resultsList.innerHTML = "";
+
+            // Cari kata kunci dalam data
+            for (var i = 0; i < data.length; i++) {
+                var title = data[i].title.toLowerCase();
+                var content = data[i].content.toLowerCase();
+
+                if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                    // Tampilkan hasil pencarian
+                    var li = document.createElement("li");
+                    var titleNode = document.createTextNode(data[i].title);
+                    var contentNode = document.createTextNode(data[i].content);
+                    li.appendChild(titleNode);
+                    li.appendChild(document.createElement("br"));
+                    li.appendChild(contentNode);
+                    resultsList.appendChild(li);
+                }
+            }
+
+            // Tampilkan hasil pencarian di depan halaman
+            var resultsContainer = document.getElementById("resultsContainer");
+            if (resultsList.children.length > 0) {
+                resultsContainer.classList.add("visible");
+            } else {
+                resultsContainer.classList.remove("visible");
+            }
+        }
+
+    </script>
+</body>
+</html>

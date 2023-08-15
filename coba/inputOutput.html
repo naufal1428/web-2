@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menampilkan Input Form dengan innerHTML</title>
+</head>
+<body>
+  <h2>Form Input</h2>
+  <input type="text" id="inputText" placeholder="Masukkan teks">
+  <button onclick="tampilkanInput()">Tampilkan</button>
+
+  <h2>Hasil:</h2>
+  <div id="outputDiv"></div>
+
+  <script>
+    function tampilkanInput() {
+      var input = document.getElementById("inputText").value;
+      var outputDiv = document.getElementById("outputDiv");
+      outputDiv.innerHTML = input;
+    }
+  </script>
+</body>
+</html>

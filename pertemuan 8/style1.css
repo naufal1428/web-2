@@ -1,0 +1,187 @@
+
+
+.nav-item {
+    margin-left: 50px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: medium;
+}
+
+.nav-link:hover {
+    color: #03256c;
+}
+
+.save {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+button {
+    color: gray;
+    border-radius: 50px;
+    border: none;
+    margin-top: 30px;
+}
+
+.lingkaran {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background-color:#06BEE1;
+}
+
+.lingkaran i {
+    position: relative;
+    top: 30px
+    
+}
+
+.form-control {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    max-width: 470px;
+    border-color: #03256c;
+}
+
+.footer {
+    background-color: #06BEE1;
+    
+}
+
+.item-footer {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.section1 {
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.descript {
+    color: #FFFFFF;
+}
+
+.bt-section1 {
+    padding: 10px 30px;
+    font-size: medium;
+    color: #FFFFFF;
+    background-color: #2541B2;
+}
+
+.bt-section1:hover {
+    background-color: #06BEE1;
+    color: #03256c;
+}
+
+.section2 {
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+
+.offset {
+    color: #03256c;
+}
+
+.offsets {
+    color: #1768AC;
+}
+
+.offsets-p {
+    color: #03256c;
+}
+
+.bt-section2 {
+    padding: 10px 20px;
+    font-size: small;
+    background-color:#2541B2;
+    color:#FFFFFF;
+}
+
+.bt-section2:hover {
+    background-color: #06BEE1;
+    color: #03256c;
+}
+
+.section3 {
+    padding-top: 75px;
+    padding-bottom: 200px;
+}
+
+.impact {
+    padding-bottom: 70px;
+    padding-top: 50px;
+    color: #03256c;
+}
+
+.impacts {
+    color: #FFFFFF;
+}
+
+.project {
+    color: #03256c;
+}
+
+.project-1-2 {
+    color: #03256c;
+    padding-top: 30px;
+}
+
+
+
+.plastic {
+    background-size: cover;
+    height: 390px;
+    width: 720px;
+}
+
+.problems {
+    color: #1768AC;
+    padding-top: 50px;
+}
+
+.solution1 {
+    color: #1768AC;
+    padding-top: 70px;
+}
+
+.solution2 {
+    color: #1768AC;
+    padding-top: 90px;
+}
+
+.section5 {
+    background:none;
+}
+
+.get-in-touch {
+    color: #03256c;
+}
+
+.bt-section5 {
+    padding: 10px 30px;
+    font-size: small;
+    background-color:#2541B2;
+    color:#FFFFFF;
+}
+
+.bt-section5:hover {
+    background-color: #06BEE1;
+    color: #03256c;
+}
+
+.item-footer:hover {
+    color: #FFFFFF;
+}
